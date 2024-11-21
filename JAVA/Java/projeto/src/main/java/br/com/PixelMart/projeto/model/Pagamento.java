@@ -17,10 +17,10 @@ public class Pagamento {
     @Column(name = "numero_do_cartao", length = 20, nullable = false)
     private String numeroDoCartao;
 
-    @Column(name = "data_validade", length = 30, nullable = false) // Formato MM/AA
+    @Column(name = "data_validade", length = 7, nullable = false) // Formato MM/AA
     private String dataValidade;
 
-    @Column(name = "cvv", length = 5, nullable = false)
+    @Column(name = "cvv", length = 4, nullable = false)
     private String cvv;
 
     // Construtor padrão
